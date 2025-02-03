@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  .navbar .nav-links li {
+    margin-left: 20px;
+  }
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  .navbar .nav-links a:hover {
+    color: #007BFF;
+  }
+  
+  /* Sections */
+  section {
+    padding: 100px 0 60px;
+    min-height: 100vh;
+  }
+  
+  /* Home Section */
+  .home-section {
+    /* background: url('a.jpg') no-repeat center center/cover; */
+    background: #808080;
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+  }
+  .home-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  .home-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  .home-section .contact-info p {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  .home-section a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Section Headings */
+  section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #007BFF;
+  }
+  
+  /* Experience, Projects, Education Items */
+  .experience-item, .project-item, .education-item {
+    margin-bottom: 30px;
+  }
+  .experience-item h3, .project-item h3, .education-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+  }
+  .experience-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  .location-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  .experience-item ul, .project-item ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  /* Skills Section */
+  .skills-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  /* Contact Section */
+  .contact-section form {
+    max-width: 600px;
+    margin: auto;
+  }
+  .contact-section .form-group {
+    margin-bottom: 20px;
+  }
+  .contact-section input,
+  .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .contact-section button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .contact-section button:hover {
+    background: #0056b3;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  

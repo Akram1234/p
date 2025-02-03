@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akram Mohammad - Portfolio</title>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- AOS Library for scroll animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#">Akram Mohammad</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="container" data-aos="fade-up">
+      <h1 class="animate__animated animate__fadeInDown">Akram Mohammad</h1>
+      <p>R&D Senior Software Engineer | EV Charging Systems | Full Stack Developer</p>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> (667)464-1100</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:akramcreate@gmail.com">akramcreate@gmail.com</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/akram-mohammad/">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/akram1234">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <div class="container" data-aos="fade-up">
+      <h2>Experience</h2>
+
+      <!-- Experience Item -->
+      <div class="experience-item">
+        <h3>ABB E-Mobility</h3>
+        <h4>R&D Senior Software Engineer</h4>
+        <p class="location-date">Hartford, CT | Aug 2024 - Present</p>
+        <ul>
+          <li>Architected an EV charger contactor health monitoring mechanism compliant with ISO15118 and OCPP 1.6 standards, integrating real-time alerts to improve customer safety and reduce service turnaround time by 17 days.</li>
+          <li>Enhanced data exchange efficiency by 72.6% through Service Data Objects, enabling seamless communication between low-level and high-level components.</li>
+          <li>Constructed asynchronous workflows using MQTT and Java 8 CompletableFutures, leading to a 26% improvement in payment settlement efficiency.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>ABB E-Mobility</h3>
+        <h4>R&D Software Engineer 3</h4>
+        <p class="location-date">Hartford, CT | Dec 2023 - Aug 2024</p>
+        <ul>
+          <li>Implemented an event bus using the Pub-Sub model in Java, reducing cross-team integration time by 40%.</li>
+          <li>Designed a monitoring framework to restart crashed processes and validate vehicle communication certificates, reducing failed sessions by 47%.</li>
+          <li>Collaborated with the HMI team to create an Angular-based interface for real-time monitoring.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Cowan Systems</h3>
+        <h4>Analyst Intern</h4>
+        <p class="location-date">Baltimore, MD | Jun 2023 - Aug 2023</p>
+        <ul>
+          <li>Developed efficient SQL solutions to achieve real-time database synchronization and reduced latency by 25%.</li>
+          <li>Redesigned a 3-tier MVC architecture for a React-based single-page application ensuring a seamless user experience.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>University of Maryland</h3>
+        <h4>Graduate Research & Teaching Assistant</h4>
+        <p class="location-date">Baltimore, MD | Aug 2022 - Jun 2023</p>
+        <ul>
+          <li>Spearheaded a defense system using Recurrent Neural Networks to mitigate runtime control flow attacks.</li>
+          <li>Designed and graded programming assignments for 60 students.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Oracle Corporation</h3>
+        <h4>Software Engineer</h4>
+        <p class="location-date">Hyderabad, India | Sep 2020 - Aug 2022</p>
+        <ul>
+          <li>Enhanced system resilience by 15% using Spring and Kubernetes to develop a Resource Monitoring Framework.</li>
+          <li>Developed scalable REST APIs and integrated Apache Kafka for event-driven communication.</li>
+          <li>Implemented a centralized logging framework using Log4j and the ELK stack across eight modules.</li>
+          <li>Deployed a rate-limiting system with multi-threading to handle up to 46,000 requests per second.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Vassar Labs Pvt Ltd</h3>
+        <h4>Software Engineer Intern</h4>
+        <p class="location-date">Hyderabad, India | May 2019 - Oct 2019</p>
+        <ul>
+          <li>Crafted a data pipeline for point-to-grid data conversion and heatmap generation using Spring APIs and Angular modules.</li>
+          <li>Optimized web scraping performance using multi-threading techniques.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>Secured Peer to Peer File Distributed System</h3>
+        <p><strong>Technologies:</strong> React, Java, AES Encryption, Multithreading</p>
+        <ul>
+          <li>Created a secure P2P distributed file system with CRUD operations and AES encryption.</li>
+          <li>Developed a React interface for authentication and file management with impressive performance benchmarks.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <h3>Institute ERP Web Application</h3>
+        <p><strong>Technologies:</strong> Django, Python</p>
+        <ul>
+          <li>Led a 3.5M-line open-source project and architected a File Tracking Module with REST APIs for managing file descriptors.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container" data-aos="fade-up">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> C, C++, C#, Python 3, Java 8, TypeScript, R, Golang, PHP</li>
+        <li><strong>Databases:</strong> MySQL, Redis, MongoDB, PostgreSQL, Cassandra, NoSQL</li>
+        <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript, Bootstrap, REST API, GraphQL, Apache Kafka, TensorFlow</li>
+        <li><strong>Frameworks & Libraries:</strong> Node.js, React.js, Angular, Redux, Express, Spring Boot, GRPC, Django, JUnit, Mockito</li>
+        <li><strong>Deployment:</strong> AWS (S3, RDS, EC2, ECS, Beanstalk, MapReduce, CDK), GCP, Docker, Kubernetes</li>
+        <li><strong>Certifications:</strong> <a href="https://www.credly.com/badges/7171c022-0586-4b4d-9cb0-e8c0a24d65f0/public_url" target="_blank">AWS Solutions Architect</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <div class="container" data-aos="fade-up">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>University of Maryland - Baltimore, MD</h3>
+        <p><strong>Masters in Computer Science</strong> – GPA: 4.0/4.0</p>
+      </div>
+      <div class="education-item">
+        <h3>Indian Institute of Information Technology Jabalpur - India</h3>
+        <p><strong>Bachelors in Computer Science</strong> – GPA: 3.7/4.0</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Akram Mohammad. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS and Custom Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Initialize AOS animations
+    AOS.init({ duration: 1000 });
+
+    // Simple contact form handler (for demo purposes)
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message. I will get back to you soon!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
