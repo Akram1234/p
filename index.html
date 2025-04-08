@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Akram Mohammad - Portfolio</title>
+  <title>Akram Mohammad – Portfolio</title>
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- Font Awesome for icons -->
@@ -12,6 +12,94 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 2rem;
+    }
+    /* Header & Navigation */
+    header, footer {
+      background: #343a40;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    header .logo a,
+    footer p {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    /* Section Titles */
+    h1, h2, h3, h4 {
+      font-weight: 600;
+    }
+    /* Section Items */
+    .experience-item,
+    .project-item,
+    .education-item {
+      background: #fff;
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    .location-date {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 0.8rem;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+    ul.skills-list li {
+      margin-bottom: 0.5rem;
+    }
+    a:hover {
+      color: #007bff;
+    }
+    /* Form Styling */
+    #contact-form input, #contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #contact-form button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+    #contact-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -39,7 +127,8 @@
       <h1 class="animate__animated animate__fadeInDown">Akram Mohammad</h1>
       <p>R&D Senior Software Engineer | EV Charging Systems | Full Stack Developer</p>
       <div class="contact-info">
-        <p><i class="fas fa-phone"></i> (667)464-1100</p>
+        <p><i class="fas fa-map-marker-alt"></i> New York City</p>
+        <p><i class="fas fa-phone"></i> +1 (667) 464-1100</p>
         <p><i class="fas fa-envelope"></i> <a href="mailto:akramcreate@gmail.com">akramcreate@gmail.com</a></p>
         <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/akram-mohammad/">LinkedIn</a></p>
         <p><i class="fab fa-github"></i> <a href="https://github.com/akram1234">GitHub</a></p>
@@ -51,94 +140,79 @@
   <section id="experience" class="experience-section">
     <div class="container" data-aos="fade-up">
       <h2>Experience</h2>
-
-      <!-- Experience Item -->
+      
+      <!-- Experience Item: ABB E-Mobility -->
       <div class="experience-item">
-        <h3>ABB E-Mobility</h3>
-        <h4>R&D Senior Software Engineer</h4>
-        <p class="location-date">Hartford, CT | Aug 2024 - Present</p>
+        <h3>R&D Senior Software Engineer - ABB E-Mobility, Hartford, CT</h3>
+        <p class="location-date">Dec 2023 – Present</p>
         <ul>
-          <li>Architected an EV charger contactor health monitoring mechanism compliant with ISO15118 and OCPP 1.6 standards, integrating real-time alerts to improve customer safety and reduce service turnaround time by 17 days.</li>
-          <li>Enhanced data exchange efficiency by 72.6% through Service Data Objects, enabling seamless communication between low-level and high-level components.</li>
-          <li>Constructed asynchronous workflows using MQTT and Java 8 CompletableFutures, leading to a 26% improvement in payment settlement efficiency.</li>
+          <li>Architected an EV charger contactor health monitoring mechanism using Java and AWS IoT Core—compliant with ISO15118 and OCPP 1.6 to trigger real‑time alerts and reduce service turnaround by 17 days</li>
+          <li>Enhanced data exchange efficiency by 72.6% using Service Data Objects in C++ with gRPC and Protocol Buffers, enabling low level to high level communication and boosting client profitability</li>
+          <li>Built an event bus via a PubSub model using Spring Cloud Stream in Java and Docker on AWS ECS adhering to Agile SDLC practices tracked in JIRA, reducing crossteam integration time by 40% and accelerating eventdriven feature rollout</li>
+          <li>Constructed asynchronous workflows with Reactive Streams in Java and Kafka, ensuring real‑time data consistency, and improving payment settlement efficiency by 26%</li>
+          <li>Designed a parent‑child monitoring framework in Java with Spring Boot and containerization, by implementing auto‑restart of crashed processes and validating vehicle certificates which cut failed plug‑and‑charge sessions by 47%</li>
+          <li>Collaborated with the HMI team to develop an Angular (TypeScript) interface with REST API integration for real‑time infrastructure monitoring, boosting user satisfaction by 20% and operational visibility by 35%</li>
         </ul>
       </div>
-
+      
+      <!-- Experience Item: Cowan Systems -->
       <div class="experience-item">
-        <h3>ABB E-Mobility</h3>
-        <h4>R&D Software Engineer 3</h4>
-        <p class="location-date">Hartford, CT | Dec 2023 - Aug 2024</p>
+        <h3>Analyst Intern - Cowan Systems, Baltimore, MD</h3>
+        <p class="location-date">Jun 2023 – Aug 2023</p>
         <ul>
-          <li>Implemented an event bus using the Pub-Sub model in Java, reducing cross-team integration time by 40%.</li>
-          <li>Designed a monitoring framework to restart crashed processes and validate vehicle communication certificates, reducing failed sessions by 47%.</li>
-          <li>Collaborated with the HMI team to create an Angular-based interface for real-time monitoring.</li>
+          <li>Developed efficient SQL solutions with stored procedures, triggers, and query optimization on SQL Server, reducing data transfer latency by 25% using advanced indexing; built and integrated FastAPI-based ETL pipelines for faster data processing</li>
+          <li>Redesigned a 3‑tier MVC single‑page web application using React, enhancing page load speed by 35% for a seamless user experience, using CI/CD pipelines to ensure automated testing and deployment</li>
         </ul>
       </div>
-
+      
+      <!-- Experience Item: Oracle Corporation -->
       <div class="experience-item">
-        <h3>Cowan Systems</h3>
-        <h4>Analyst Intern</h4>
-        <p class="location-date">Baltimore, MD | Jun 2023 - Aug 2023</p>
+        <h3>Software Engineer - Oracle Corporation, Hyderabad, India</h3>
+        <p class="location-date">Sep 2020 – Aug 2022</p>
         <ul>
-          <li>Developed efficient SQL solutions to achieve real-time database synchronization and reduced latency by 25%.</li>
-          <li>Redesigned a 3-tier MVC architecture for a React-based single-page application ensuring a seamless user experience.</li>
+          <li>Enhanced system resilience by 15% using a Resource Monitoring Framework built with Spring and Kubernetes; leveraged Prometheus and Alertmanager to monitor metrics and trigger load balancer adjustments for traffic management</li>
+          <li>Developed scalable REST APIs from PRDs, integrated third‑party payment gateways, and utilized Apache Kafka for event‑driven communication; implemented a Jenkins-based CI/CD pipeline for migration between MongoDB and MySQL</li>
+          <li>Introduced a centralized logging framework using Log4j and the ELK stack across eight modules, reducing troubleshooting time by 40% and building CLI tools in Linux with Grafana dashboards for enhanced diagnostics</li>
+          <li>Deployed a multi‑threaded rate‑limiting system, enabling the server to handle 46,000 requests per second and prevent crashes during peak loads</li>
         </ul>
       </div>
-
+      
+      <!-- Experience Item: Vassar Labs Pvt Ltd -->
       <div class="experience-item">
-        <h3>University of Maryland</h3>
-        <h4>Graduate Research & Teaching Assistant</h4>
-        <p class="location-date">Baltimore, MD | Aug 2022 - Jun 2023</p>
+        <h3>Software Engineer Intern - Vassar Labs Pvt Ltd, Hyderabad, India</h3>
+        <p class="location-date">May 2019 – Oct 2019</p>
         <ul>
-          <li>Spearheaded a defense system using Recurrent Neural Networks to mitigate runtime control flow attacks.</li>
-          <li>Designed and graded programming assignments for 60 students.</li>
+          <li>Crafted a data pipeline using inverse‑square interpolation to convert point data to grid data, generating heatmaps with VIC in R, storing results in a 300GB Cassandra DB, and reducing processing time by 35% via Spring APIs and Angular modules</li>
+          <li>Optimized web scraping using Python by cutting runtime from 19.2 to 7 minutes using multi‑threading, and reduced latency of three web apps by 50% through decentralized API design</li>
         </ul>
       </div>
-
-      <div class="experience-item">
-        <h3>Oracle Corporation</h3>
-        <h4>Software Engineer</h4>
-        <p class="location-date">Hyderabad, India | Sep 2020 - Aug 2022</p>
-        <ul>
-          <li>Enhanced system resilience by 15% using Spring and Kubernetes to develop a Resource Monitoring Framework.</li>
-          <li>Developed scalable REST APIs and integrated Apache Kafka for event-driven communication.</li>
-          <li>Implemented a centralized logging framework using Log4j and the ELK stack across eight modules.</li>
-          <li>Deployed a rate-limiting system with multi-threading to handle up to 46,000 requests per second.</li>
-        </ul>
-      </div>
-
-      <div class="experience-item">
-        <h3>Vassar Labs Pvt Ltd</h3>
-        <h4>Software Engineer Intern</h4>
-        <p class="location-date">Hyderabad, India | May 2019 - Oct 2019</p>
-        <ul>
-          <li>Crafted a data pipeline for point-to-grid data conversion and heatmap generation using Spring APIs and Angular modules.</li>
-          <li>Optimized web scraping performance using multi-threading techniques.</li>
-        </ul>
-      </div>
+      
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="projects-section">
     <div class="container" data-aos="fade-up">
-      <h2>Projects</h2>
+      <h2>Academic Projects</h2>
+      
+      <!-- Project Item: Market Place -->
       <div class="project-item">
-        <h3>Secured Peer to Peer File Distributed System</h3>
-        <p><strong>Technologies:</strong> React, Java, AES Encryption, Multithreading</p>
+        <h3>Market Place (React.js | Node.js | MongoDB | MySQL | Apache Kafka | Redux | Redis | AWS | GraphQL | Rest API)</h3>
         <ul>
-          <li>Created a secure P2P distributed file system with CRUD operations and AES encryption.</li>
-          <li>Developed a React interface for authentication and file management with impressive performance benchmarks.</li>
+          <li>Engineered a decentralized marketplace supporting 15K+ users, cutting order processing time by 30% with GraphQL updates</li>
+          <li>Developed a Node.js backend with Kafka messaging and Redis caching, increasing transaction throughput by 35% at peak</li>
         </ul>
       </div>
-
+      
+      <!-- Project Item: Stack Overflow Clone -->
       <div class="project-item">
-        <h3>Institute ERP Web Application</h3>
-        <p><strong>Technologies:</strong> Django, Python</p>
+        <h3>Stack Overflow Clone (React.js | Node.js | Express | Redux | MySQL | MongoDB | Apache Kafka | Mocha | Redis | AWS)</h3>
         <ul>
-          <li>Led a 3.5M-line open-source project and architected a File Tracking Module with REST APIs for managing file descriptors.</li>
+          <li>Engineered a robust three‑tier AWS system using React‑Redux, Node.js/Express, MySQL, and MongoDB; containerized with Docker and orchestrated by Kubernetes, reducing API response times by 30% and processing 10M+ monthly requests</li>
+          <li>Integrated Apache Kafka with Passport JWT for authentication, handling 10K+ requests at 99.9% uptime; optimized load balancing using NGINX and Redis, processing 15K requests per minute with 25% performance gain</li>
         </ul>
       </div>
+      
     </div>
   </section>
 
@@ -147,12 +221,12 @@
     <div class="container" data-aos="fade-up">
       <h2>Skills</h2>
       <ul class="skills-list">
-        <li><strong>Languages:</strong> C, C++, C#, Python 3, Java 8, TypeScript, R, Golang, PHP</li>
-        <li><strong>Databases:</strong> MySQL, Redis, MongoDB, PostgreSQL, Cassandra, NoSQL</li>
-        <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript, Bootstrap, REST API, GraphQL, Apache Kafka, TensorFlow</li>
-        <li><strong>Frameworks & Libraries:</strong> Node.js, React.js, Angular, Redux, Express, Spring Boot, GRPC, Django, JUnit, Mockito</li>
-        <li><strong>Deployment:</strong> AWS (S3, RDS, EC2, ECS, Beanstalk, MapReduce, CDK), GCP, Docker, Kubernetes</li>
-        <li><strong>Certifications:</strong> <a href="https://www.credly.com/badges/7171c022-0586-4b4d-9cb0-e8c0a24d65f0/public_url" target="_blank">AWS Solutions Architect</a></li>
+        <li><strong>Languages:</strong> C, C++, Python, Java, Bash, Go</li>
+        <li><strong>Databases:</strong> MySQL, Redis, MongoDB, PostgreSQL, NoSQL</li>
+        <li><strong>Web:</strong> HTML5, CSS3, JavaScript, TypeScript, PHP, Bootstrap, REST API, GraphQL, Apache Kafka, TensorFlow</li>
+        <li><strong>Frameworks:</strong> Node.js, React.js, Angular, Redux, Express, Passport.js, Spring Boot, GRPC, Next.js, .NET, Spring Framework</li>
+        <li><strong>Tools:</strong> Git, Hibernate, JIRA, Postman, JMeter, Mocha, JUnit, Tableau, Power BI, Android Studio, ESLint, Maven, BitBucket</li>
+        <li><strong>Deployment:</strong> AWS Cloud (S3, RDS, EC2, ECS, Beanstalk, MapReduce, CDK, SNS, SQS), GCP, Docker, Kubernetes, Azure Services</li>
       </ul>
     </div>
   </section>
@@ -162,11 +236,11 @@
     <div class="container" data-aos="fade-up">
       <h2>Education</h2>
       <div class="education-item">
-        <h3>University of Maryland - Baltimore, MD</h3>
+        <h3>University of Maryland, Baltimore MD</h3>
         <p><strong>Masters in Computer Science</strong> – GPA: 4.0/4.0</p>
       </div>
       <div class="education-item">
-        <h3>Indian Institute of Information Technology Jabalpur - India</h3>
+        <h3>Indian Institute of Information Technology Jabalpur – India</h3>
         <p><strong>Bachelors in Computer Science</strong> – GPA: 3.7/4.0</p>
       </div>
     </div>
@@ -175,7 +249,7 @@
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="container" data-aos="fade-up">
-      <h2>Contact Me</h2>
+      <h2>Contact</h2>
       <form id="contact-form">
         <div class="form-group">
           <input type="text" id="name" name="name" placeholder="Your Name" required />
@@ -191,22 +265,20 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Akram Mohammad. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- AOS and Custom Script -->
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    // Initialize AOS animations
     AOS.init({ duration: 1000 });
-
-    // Simple contact form handler (for demo purposes)
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert('Thank you for your message. I will get back to you soon!');
+      alert('Thank you for reaching out. I will respond to your inquiry promptly.');
       this.reset();
     });
   </script>
