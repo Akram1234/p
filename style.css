@@ -47,7 +47,7 @@
   }
   .navbar .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #007BFF;
     transition: color 0.3s;
   }
   .navbar .nav-links a:hover {
