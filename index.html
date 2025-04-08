@@ -27,7 +27,7 @@
       margin: auto;
       padding: 0 2rem;
     }
-    /* Navigation Bar */
+    /* Navigation Bar (remains unchanged) */
     header, footer {
       background: #343a40;
       color: #fff;
@@ -51,7 +51,7 @@
       text-decoration: none;
       font-size: 0.95rem;
     }
-    /* Fixed Home Section (Banner) as a left sidebar */
+    /* Fixed Home Section (Left Sidebar) */
     #home {
       position: fixed;
       top: 0;
@@ -63,12 +63,16 @@
       overflow-y: auto;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     }
-    /* Main content wrapper shifted to the right */
+    /* Optional: Spacing for contact info within the fixed sidebar */
+    .contact-info {
+      margin-top: 2rem;
+    }
+    /* Main Content Area (scrollable on the right) */
     .main-content {
       margin-left: 30%;
       padding: 2rem;
     }
-    /* Section Titles for content in main-content */
+    /* Section Titles for main content */
     .main-content h2 {
       margin-top: 2rem;
       text-align: center;
@@ -140,7 +144,7 @@
     </nav>
   </header>
 
-  <!-- Home Section (Banner remains unchanged) -->
+  <!-- Home Section (Fixed Left Sidebar) -->
   <section id="home" class="home-section">
     <div class="container" data-aos="fade-up">
       <h1 class="animate__animated animate__fadeInDown">Akram Mohammad</h1>
@@ -155,7 +159,7 @@
     </div>
   </section>
 
-  <!-- Main Content (scrollable area) -->
+  <!-- Main Content Area (Right Side) -->
   <div class="main-content">
     <!-- Experience Section -->
     <section id="experience" class="experience-section" data-aos="fade-up">
@@ -174,7 +178,6 @@
           <li>Collaborated with the HMI team to develop an Angular (TypeScript) interface with REST API integration for real‑time infrastructure monitoring, boosting user satisfaction by 20% and operational visibility by 35%.</li>
         </ul>
       </div>
-
       <!-- Experience Item: Cowan Systems -->
       <div class="experience-item">
         <h3>Cowan Systems</h3>
@@ -185,7 +188,6 @@
           <li>Redesigned a 3‑tier MVC single‑page web application using React, enhancing page load speed by 35% for a seamless user experience, using CI/CD pipelines to ensure automated testing and deployment.</li>
         </ul>
       </div>
-
       <!-- Experience Item: Oracle Corporation -->
       <div class="experience-item">
         <h3>Oracle Corporation</h3>
@@ -198,7 +200,6 @@
           <li>Deployed a multi‑threaded rate‑limiting system, enabling the server to handle 46,000 requests per second and prevent crashes during peak loads.</li>
         </ul>
       </div>
-
       <!-- Experience Item: Vassar Labs Pvt Ltd -->
       <div class="experience-item">
         <h3>Vassar Labs Pvt Ltd</h3>
