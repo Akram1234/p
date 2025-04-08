@@ -12,6 +12,113 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 2rem;
+    }
+    /* Navigation Bar */
+    header, footer {
+      background: #343a40;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    header .logo a,
+    footer p {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    /* Fixed Home Section (Banner) as a left sidebar */
+    #home {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 100vh;
+      padding: 2rem;
+      background: #fff;
+      overflow-y: auto;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+    /* Main content wrapper shifted to the right */
+    .main-content {
+      margin-left: 30%;
+      padding: 2rem;
+    }
+    /* Section Titles for content in main-content */
+    .main-content h2 {
+      margin-top: 2rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    /* Section Items (Experience, Projects, Education) */
+    .experience-item,
+    .project-item,
+    .education-item {
+      background: #fff;
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    .location-date {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 0.8rem;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+    ul.skills-list li {
+      margin-bottom: 0.5rem;
+    }
+    /* Contact Form Styling */
+    #contact-form input, #contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #contact-form button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+    #contact-form button:hover {
+      background-color: #0056b3;
+    }
+    a:hover {
+      color: #007bff;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -33,7 +140,7 @@
     </nav>
   </header>
 
-  <!-- Home Section -->
+  <!-- Home Section (Banner remains unchanged) -->
   <section id="home" class="home-section">
     <div class="container" data-aos="fade-up">
       <h1 class="animate__animated animate__fadeInDown">Akram Mohammad</h1>
@@ -48,11 +155,11 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="experience-section">
-    <div class="container" data-aos="fade-up">
+  <!-- Main Content (scrollable area) -->
+  <div class="main-content">
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section" data-aos="fade-up">
       <h2>Experience</h2>
-
       <!-- Experience Item: ABB E-Mobility -->
       <div class="experience-item">
         <h3>ABB E-Mobility</h3>
@@ -102,12 +209,10 @@
           <li>Optimized web scraping using Python by cutting runtime from 19.2 to 7 minutes using multi‑threading, and reduced latency of three web apps by 50% through decentralized API design.</li>
         </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section">
-    <div class="container" data-aos="fade-up">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" data-aos="fade-up">
       <h2>Projects</h2>
       <!-- Project Item: Market Place -->
       <div class="project-item">
@@ -125,12 +230,10 @@
           <li>Integrated Apache Kafka with Passport JWT for authentication, handling 10K+ requests at 99.9% uptime; optimized load balancing using NGINX and Redis, processing 15K requests per minute with 25% performance gain.</li>
         </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills-section">
-    <div class="container" data-aos="fade-up">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" data-aos="fade-up">
       <h2>Skills</h2>
       <ul class="skills-list">
         <li><strong>Languages:</strong> C, C++, Python, Java, Bash, Go</li>
@@ -140,12 +243,10 @@
         <li><strong>Tools:</strong> Git, Hibernate, JIRA, Postman, JMeter, Mocha, JUnit, Tableau, Power BI, Android Studio, ESLint, Maven, BitBucket</li>
         <li><strong>Deployment:</strong> AWS Cloud (S3, RDS, EC2, ECS, Beanstalk, MapReduce, CDK, SNS, SQS), GCP, Docker, Kubernetes, Azure Services</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education Section -->
-  <section id="education" class="education-section">
-    <div class="container" data-aos="fade-up">
+    <!-- Education Section -->
+    <section id="education" class="education-section" data-aos="fade-up">
       <h2>Education</h2>
       <div class="education-item">
         <h3>University of Maryland, Baltimore MD</h3>
@@ -155,12 +256,10 @@
         <h3>Indian Institute of Information Technology Jabalpur – India</h3>
         <p><strong>Bachelors in Computer Science</strong> – GPA: 3.7/4.0</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="container" data-aos="fade-up">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" data-aos="fade-up">
       <h2>Contact Me</h2>
       <form id="contact-form">
         <div class="form-group">
@@ -174,14 +273,15 @@
         </div>
         <button type="submit">Send Message</button>
       </form>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Akram Mohammad. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Akram Mohammad. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
 
   <!-- AOS and Custom Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
